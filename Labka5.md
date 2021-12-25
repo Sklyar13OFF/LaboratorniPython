@@ -71,7 +71,7 @@ else:
 Process finished with exit code 0
 **Завдання №3**
 
-Перевірити справедливість рівності при заданій точності ε: 
+Перевірити справедливість рівності при заданій точності  ε: 
 
 ![equations](http://www.sciweavers.org/upload/Tex2Img_1640372371/render.png)
 
@@ -108,6 +108,22 @@ else:
 Process finished with exit code 0
 
 **Завдання №4** 
-Нехай ![equations]()
+Нехай ![equations](http://www.sciweavers.org/upload/Tex2Img_1640373011/render.png) , де ![equations](http://www.sciweavers.org/upload/Tex2Img_1640428550/render.png). Визначити ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430449/render.png)
+```python 
+"""
+x0 - почтакове значення змінної
+x1 -  значення, що приймає x0 при рекурентному алгоритмі
+"""
+x0 = 1      #початкоеве значення
+for i in range(1,11):
+    x1 = x0 + 2*i   #рекурентний алгоритм (переприсвоєння значень)
+    x0 = x1
+print("Значення x з індексом 10 =  {0}".format(x0))
+```
+**Результат**
 
+Значення x з індексом 10 =  111
+
+
+Process finished with exit code 0
 
