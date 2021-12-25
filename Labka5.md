@@ -108,7 +108,9 @@ else:
 Process finished with exit code 0
 
 **Завдання №4** 
-Нехай ![equations](http://www.sciweavers.org/upload/Tex2Img_1640373011/render.png) , де ![equations](http://www.sciweavers.org/upload/Tex2Img_1640428550/render.png). Визначити ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430449/render.png)
+Нехай ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430733/render.png) , де 
+
+![equations](http://www.sciweavers.org/upload/Tex2Img_1640428550/render.png). Визначити ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430449/render.png)
 ```python 
 """
 x0 - почтакове значення змінної
