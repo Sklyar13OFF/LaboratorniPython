@@ -3,7 +3,7 @@
 
 Дано ![equations](http://www.sciweavers.org/upload/Tex2Img_1640371536/render.png). Знайти ![equations](http://www.sciweavers.org/upload/Tex2Img_1640371599/render.png).
 
-**Код**![147369421-e0b54633-b9fa-4b31-9518-6e4867c931da](https://user-images.githubusercontent.com/45038310/147369724-ae50e381-ef6d-42b9-9b67-cf8126837dd2.png)![147369421-e0b54633-b9fa-4b31-9518-6e4867c931da](https://user-images.githubusercontent.com/45038310/147369726-e1e0d464-7f75-45bb-bf2a-f48acc414168.png)
+**Код**
 
 
 
@@ -69,6 +69,7 @@ else:
 
 
 Process finished with exit code 0
+
 **Завдання №3**
 
 Перевірити справедливість рівності при заданій точності  ε: 
@@ -108,6 +109,7 @@ else:
 Process finished with exit code 0
 
 **Завдання №4** 
+
 Нехай ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430733/render.png) , де 
 
 ![equations](http://www.sciweavers.org/upload/Tex2Img_1640428550/render.png). Визначити ![equations](http://www.sciweavers.org/upload/Tex2Img_1640430449/render.png)
