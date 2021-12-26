@@ -2,6 +2,7 @@
 
 Задано рядок символів, що містить слова розділені пробілами. Визначити скільки слів є числами.
 
+Текстовий файл - https://github.com/Sklyar13OFF/LaboratorniPython/blob/master/Labkanineteen/mynumbers.txt
 ```python
 with open('mynumbers.txt') as file:
     line = file.readlines()
