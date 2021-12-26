@@ -63,7 +63,7 @@ class Line:
 
 Process finished with exit code 0
 
-**завдання №2**
+**Завдання №2**
 
 Об’єкт -  “Монітор”
 
