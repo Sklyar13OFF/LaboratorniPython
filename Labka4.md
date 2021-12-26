@@ -44,6 +44,7 @@ _Process finished with exit code 0_
 _Завдання №2_
 
 Дано три дійсних числа:_a, b, c_ . Знайти _min(a,b) + (max(b,c))^2_
+
 **Код**
 
 ```python
