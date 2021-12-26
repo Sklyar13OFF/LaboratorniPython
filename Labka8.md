@@ -39,7 +39,8 @@ print('Результат : {0}'.format(u))
 
 Process finished with exit code 0
 
-**Завдання №3**
+**Завдання №3**]
+
 Нехай ![equations](http://www.sciweavers.org/upload/Tex2Img_1640440676/render.png). Визначити ![equatoins](http://www.sciweavers.org/upload/Tex2Img_1640440723/render.png).
 
 ```python
