@@ -59,7 +59,7 @@ Process finished with exit code 0
 **Завдання №2**
 Побудувати квадратну матрицю А, елементи якої задаються формулою:
 
-![equations](http://www.sciweavers.org/upload/Tex2Img_1640443083/render.png)
+![equations](http://www.sciweavers.org/upload/Tex2Img_1640510649/render.png)
 
 ```python
 """"
