@@ -16,7 +16,7 @@ class Monik:
     def pic(self):
         self.pic_h =  int(input('Введіть довжину картинки : '))
         self.pic_w = int(input('Введіть ширину картинки : '))
-        if self.pic_h >= self.height and self.pic_w >= self.width:
+        if self.pic_h == self.height and self.pic_w == self.width:
             return "Можна"
         else:
             return "Не можна"
