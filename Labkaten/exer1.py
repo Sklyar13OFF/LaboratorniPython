@@ -11,7 +11,7 @@ class Line:
         self.x_1 = float(input('Введіть першу координату точки перетину другої прямої: '))
         self.y_1 = float(input('Введіть другу координату точки перетину другої прямої: '))
         self.j = float(input('Введіть перший коефіцієнт напрямного вектора другої прямої: '))
-        self.k = float(input('Введыть другий коефіцієнт напрямного вектора другої прямої: '))
+        self.k = float(input('Введіть другий коефіцієнт напрямного вектора другої прямої: '))
         self.A = np.array([[self.m,-self.j],[self.n,-self.k]])
         self.Res = np.array([-self.x_0+self.x_1,-self.y_0+self.y_1])
         self.dot = np.linalg.solve(self.A,self.Res)
