@@ -21,7 +21,7 @@ class Monik:
         else:
             return "Не можна"
     def coef(self):
-        if self.pic_h >= self.height and self.pic_w >= self.width:
+        if self.pic_h == self.height and self.pic_w == self.width:
             self.coef.h = self.height/self.pic_h
             self.coef.w = self.width/self.pic_w
             return [self.coef.h,self.coef.w]
