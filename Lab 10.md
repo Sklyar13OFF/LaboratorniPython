@@ -131,23 +131,35 @@ class Monik:
         self.type = input('Введіть тип монітора:  ')
         self.height = int(input('Введіть довжину монітора в пікселях:  '))
         self.width = int(input('Введіть ширину монітора в пікселях:  '))
+
     def calculate_age(self):
-        today = date.today()
-        return today.year - self.date3 - ((today.month, today.day) < (self.date2, self.date1))
+        return 2021 - self.date3
+
     def pic(self):
-        self.pic_h =  int(input('Введіть довжину картинки : '))
+        self.pic_h = int(input('Введіть довжину картинки : '))
         self.pic_w = int(input('Введіть ширину картинки : '))
-        if self.pic_h >= self.height and self.pic_w >= self.width:
+        if self.pic_h == self.height and self.pic_w == self.width:
             return "Можна"
         else:
             return "Не можна"
+
     def coef(self):
-        if self.pic_h >= self.height and self.pic_w >= self.width:
-            self.coef.h = self.height/self.pic_h
-            self.coef.w = self.width/self.pic_w
-        return [self.coef.h,self.coef.w]
+        self.pic_h = int(input('Введіть довжину картинки : '))
+        self.pic_w = int(input('Введіть ширину картинки : '))
+        self.woutprop1 = self.height / self.pic_h
+        self.woutprop2 = self.width / self.pic_w
+        if self.pic_h > self.pic_w:
+            self.wprop = self.width / self.pic_w
+        else:
+            self.wprop = self.height / self.pic_h
+        return 'Без збереження пропорцій: {0}. Із збереженням пропорцій: {1}'.format([self.woutprop1, self.woutprop2],
+                                                                                     [self.wprop, self.wprop])
+
+
 A = Monik()
+print(A.calculate_age())
 print(A.pic())
+print(A.coef())
 ```
 **Результат**
 
