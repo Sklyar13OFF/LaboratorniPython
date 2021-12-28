@@ -13,11 +13,9 @@ x3, y3 = float(input("Введіть координату х для третьо
 a = m.sqrt((x1-x2)**2 + (y1-y2)**2)
 b =  m.sqrt((x2-x3)**2 + (y2-y3)**2)       #Обчислення сторін
 c =  m.sqrt((x1-x3)**2 + (y1-y3)**2)
-if a >= b:          #Порівняння сторін а та b
+if a >= b and a >= c :        
     maxi = a
-else:
-    maxi = b
-if b >= c:          #порівняння сторін b i c
+elif b >= a and b >= c:
     maxi = b
 else:
     maxi = c
