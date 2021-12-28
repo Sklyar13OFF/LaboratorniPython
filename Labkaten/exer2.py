@@ -24,8 +24,6 @@ class Monik:
             return "Не можна без масштабування"
 
     def coef(self):
-        self.pic_h = int(input('Введіть довжину картинки в пікселях: '))
-        self.pic_w = int(input('Введіть ширину картинки в пікселях: '))
         self.woutprop1 = self.height / self.pic_h
         self.woutprop2 = self.width / self.pic_w
         if self.pic_h > self.pic_w:
