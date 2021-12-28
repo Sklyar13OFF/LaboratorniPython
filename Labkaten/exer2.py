@@ -26,7 +26,7 @@ class Monik:
         if self.pic_h >= self.height and self.pic_w >= self.width:
             self.coef.h = self.height/self.pic_h
             self.coef.w = self.width/self.pic_w
-        return [self.coef.h,self.coef.w]
+            return [self.coef.h,self.coef.w]
 A = Monik()
 print(A.pic())
 
