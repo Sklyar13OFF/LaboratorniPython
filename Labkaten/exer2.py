@@ -13,26 +13,26 @@ class Monik:
         self.width = int(input('Введіть ширину монітора в пікселях:  '))
 
     def calculate_age(self):
-        return 2021 - self.date3
+        return 'Вік моніка - {0}'.format(2021 - self.date3)
 
     def pic(self):
         self.pic_h = int(input('Введіть довжину картинки : '))
         self.pic_w = int(input('Введіть ширину картинки : '))
         if self.pic_h == self.height and self.pic_w == self.width:
-            return "Можна"
+            return "Можна без масштабування"
         else:
-            return "Не можна"
+            return "Не можна без масштабування"
 
     def coef(self):
-        self.pic_h = int(input('Введіть довжину картинки : '))
-        self.pic_w = int(input('Введіть ширину картинки : '))
+        self.pic_h = int(input('Введіть довжину картинки в пікселях: '))
+        self.pic_w = int(input('Введіть ширину картинки в пікселях: '))
         self.woutprop1 = self.height / self.pic_h
         self.woutprop2 = self.width / self.pic_w
         if self.pic_h > self.pic_w:
             self.wprop = self.width / self.pic_w
         else:
             self.wprop = self.height / self.pic_h
-        return 'Без збереження пропорцій: {0}. Із збереженням пропорцій: {1}'.format([self.woutprop1, self.woutprop2],
+        return 'Без збереження пропорцій, коефіцієнт: {0}. Із збереженням пропорцій, коефіцієнт: {1}'.format([self.woutprop1, self.woutprop2],
                                                                                      [self.wprop, self.wprop])
 
 
@@ -40,4 +40,3 @@ A = Monik()
 print(A.calculate_age())
 print(A.pic())
 print(A.coef())
-
