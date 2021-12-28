@@ -1,5 +1,6 @@
 import numpy as np
 class Line:
+    
     def __init__(self):
         self.x_0 = float(input('Введіть першу координату точки, що належить першій прямій: '))
         self.y_0 = float(input('Введіть другу координату точки, що належить першій прямій: '))
@@ -24,12 +25,13 @@ class Line:
     def belongs(self):
         self.dot_x = float(input('Введіть першу координату точки: '))
         self.dot_y = float(input('Введіть другу координату точки: '))
-        if ((self.dot_x - self.x_0)/self.m) == ((self.dot_y - self.y_0)/self.n):
+        if ((self.dot_x - self.x_0)*self.n) == ((self.dot_y - self.y_0)*self.m):
             return 'Точка належить 1-ій прямій'
-        elif ((self.dot_x - self.x_1)/self.j) == ((self.dot_y - self.y_1)/self.k):
+        elif ((self.dot_x - self.x_1)*self.k) == ((self.dot_y - self.y_1)*self.j):
             return 'Точка належить 2-ій прямій'
         else:
             return 'Точка не належить жодній прямій'
+        
 A = Line()
 print(A.intersection())
 print(A.belongs())
