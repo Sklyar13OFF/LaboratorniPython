@@ -4,4 +4,5 @@ counter = 0
 for i in line:
     if i.isdigit():
         counter += 1
-print(counter)
+print('Кількість чисел - ',counter)
+
