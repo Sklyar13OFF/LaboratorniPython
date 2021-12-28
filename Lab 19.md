@@ -17,7 +17,6 @@ print(counter)
 
 **Результат**
 
-Кількість чисел:  8
-
+Кількість чисел -  2
 
 Process finished with exit code 0
