@@ -1,4 +1,3 @@
-from datetime import date
 class Monik:
     def __init__(self):
         self.firm = input('Введіть назву фірми виробника: ')
@@ -13,8 +12,7 @@ class Monik:
         self.height = int(input('Введіть довжину монітора в пікселях:  '))
         self.width = int(input('Введіть ширину монітора в пікселях:  '))
     def calculate_age(self):
-        today = date.today()
-        return today.year - self.date3 - ((today.month, today.day) < (self.date2, self.date1))
+        return 2021 - self.date3
     def pic(self):
         self.pic_h =  int(input('Введіть довжину картинки : '))
         self.pic_w = int(input('Введіть ширину картинки : '))
