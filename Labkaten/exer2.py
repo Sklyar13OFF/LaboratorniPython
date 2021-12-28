@@ -21,10 +21,16 @@ class Monik:
         else:
             return "Не можна"
     def coef(self):
-        if self.pic_h == self.height and self.pic_w == self.width:
-            self.coef.h = self.height/self.pic_h
-            self.coef.w = self.width/self.pic_w
-            return [self.coef.h,self.coef.w]
+        self.pic_h =  int(input('Введіть довжину картинки : '))
+        self.pic_w = int(input('Введіть ширину картинки : '))
+        self.woutprop1 = self.height/self.pic_h
+        self.woutprop2 = self.width/self.pic_w
+        if self.pic_h > self.pic_w:
+            self.wprop = self.width/self.pic_w
+        else:
+            self.wprop = self.height/self.pic_h
+        return 'Без збереження пропорцій: {0}. Із збереженням пропорцій: {1}'.format([self.woutprop1,self.woutprop2],[self.wprop,self.wprop])
+        
 A = Monik()
 print(A.pic())
 
