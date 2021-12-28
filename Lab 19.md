@@ -13,7 +13,7 @@ for i in line:
 print(counter)
 
 ```
-Текстовий файл:
+
 
 **Результат**
 
