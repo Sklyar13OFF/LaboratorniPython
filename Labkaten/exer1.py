@@ -27,7 +27,7 @@ class Line:
         if ((self.dot_x - self.x_0)/self.m) == ((self.dot_y - self.y_0)/self.n):
             return 'Точка належить 1-ій прямій'
         elif ((self.dot_x - self.x_1)/self.j) == ((self.dot_y - self.y_1)/self.k):
-            return 'Точка не належить 2-ій прямій'
+            return 'Точка належить 2-ій прямій'
         else:
             return 'Точка не належить жодній прямій'
 A = Line()
