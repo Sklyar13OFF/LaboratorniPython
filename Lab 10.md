@@ -117,7 +117,6 @@ print(A.belongs())
 
 ```python
 
-from datetime import date
 class Monik:
     def __init__(self):
         self.firm = input('Введіть назву фірми виробника: ')
@@ -133,26 +132,24 @@ class Monik:
         self.width = int(input('Введіть ширину монітора в пікселях:  '))
 
     def calculate_age(self):
-        return 2021 - self.date3
+        return 'Вік моніка - {0}'.format(2021 - self.date3)
 
     def pic(self):
         self.pic_h = int(input('Введіть довжину картинки : '))
         self.pic_w = int(input('Введіть ширину картинки : '))
         if self.pic_h == self.height and self.pic_w == self.width:
-            return "Можна"
+            return "Можна без масштабування"
         else:
-            return "Не можна"
+            return "Не можна без масштабування"
 
     def coef(self):
-        self.pic_h = int(input('Введіть довжину картинки : '))
-        self.pic_w = int(input('Введіть ширину картинки : '))
         self.woutprop1 = self.height / self.pic_h
         self.woutprop2 = self.width / self.pic_w
         if self.pic_h > self.pic_w:
             self.wprop = self.width / self.pic_w
         else:
             self.wprop = self.height / self.pic_h
-        return 'Без збереження пропорцій: {0}. Із збереженням пропорцій: {1}'.format([self.woutprop1, self.woutprop2],
+        return 'Без збереження пропорцій, коефіцієнт: {0}. Із збереженням пропорцій, коефіцієнт: {1}'.format([self.woutprop1, self.woutprop2],
                                                                                      [self.wprop, self.wprop])
 
 
@@ -163,21 +160,22 @@ print(A.coef())
 ```
 **Результат**
 
+
 Введіть назву фірми виробника: Lipton
 
-Введіть число дати виробництва:  13
+Введіть число дати виробництва:  12
 
-Введіть місяць дати виробництва:  05
+Введіть місяць дати виробництва:  12
 
-Введіть рік дати виробництва :  2004
+Введіть рік дати виробництва :  1674
 
-Введіть число дати купівлі:  13
+Введіть число дати купівлі:  12
 
-Введіть місяць дати купівлі:  13
+Введіть місяць дати купівлі:  12
 
-Введіть рік дати купівлі :  23
+Введіть рік дати купівлі :  2021
 
-Введіть вартість в гривнях:  23
+Введіть вартість в гривнях:  100
 
 Введіть тип монітора:  Large
 
@@ -185,11 +183,16 @@ print(A.coef())
 
 Введіть ширину монітора в пікселях:  1080
 
-Введіть довжину картинки : 32
+Вік моніка - 347
 
-Введіть ширину картинки : 32
+Введіть довжину картинки : 600
 
-Не можна
+Введіть ширину картинки : 400
+
+Не можна без масштабування
+
+Без збереження пропорцій, коефіцієнт: [3.2, 2.7]. Із збереженням пропорцій, коефіцієнт: [2.7, 2.7]
+
 
 Process finished with exit code 0
 
