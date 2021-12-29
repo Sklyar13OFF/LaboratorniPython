@@ -38,7 +38,7 @@ class Line:
         self.A = np.array([[self.m,-self.j],[self.n,-self.k]])
         self.Res = np.array([-self.x_0+self.x_1,-self.y_0+self.y_1])
         self.dot = np.linalg.solve(self.A,self.Res)
-        return self.dot
+        return 'Точка перетину 2 прямих заданих канонічними рівняннями - {0}'.format(self.dot)
     def paralel(self):
         if self.m*self.j + self.n*self.k == 0:
             return 'Паралельні'
